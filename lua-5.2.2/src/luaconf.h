@@ -49,6 +49,17 @@
 #define LUA_USE_LONGLONG	/* assume support for long long */
 #endif
 
+#if defined(LUA_USE_ANDROID)
+#define __LCONV_HAS_NO_DECIMAL_POINT__ /* WTF */
+#define LUA_USE_POSIX
+#define LUA_USE_DLOPEN		/* needs an extra library: -ldl */
+#define LUA_USE_READLINE	/* needs some extra libraries */
+#define LUA_USE_STRTODHEX	/* assume 'strtod' handles hex formats */
+#define LUA_USE_AFORMAT		/* assume 'printf' handles 'aA' specifiers */
+#define LUA_USE_LONGLONG	/* assume support for long long */
+
+#endif
+
 #if defined(LUA_USE_MACOSX)
 #define LUA_USE_POSIX
 #define LUA_USE_DLOPEN		/* does not need -ldl */
