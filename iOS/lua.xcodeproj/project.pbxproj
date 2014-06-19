@@ -696,8 +696,10 @@
 		E7094DAE19538233002FD6A0 /* Distribution */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
 				DSTROOT = /tmp/lua.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				ONLY_ACTIVE_ARCH = YES;
 				OTHER_CFLAGS = "-DLUA_USE_IOS";
 				PRODUCT_NAME = lua_MacOS;
 				SDKROOT = macosx;
@@ -781,8 +783,10 @@
 		E7094DB2195382DC002FD6A0 /* Profile */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
 				DSTROOT = /tmp/lua.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				ONLY_ACTIVE_ARCH = YES;
 				OTHER_CFLAGS = "-DLUA_USE_IOS";
 				PRODUCT_NAME = lua_MacOS;
 				SDKROOT = macosx;
@@ -856,8 +860,10 @@
 		E7094DBE19538401002FD6A0 /* AppStore */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
 				DSTROOT = /tmp/lua.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				ONLY_ACTIVE_ARCH = YES;
 				OTHER_CFLAGS = "-DLUA_USE_IOS";
 				PRODUCT_NAME = lua_MacOS;
 				SDKROOT = macosx;
@@ -931,8 +937,10 @@
 		E7094DC21953841C002FD6A0 /* Beta */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
 				DSTROOT = /tmp/lua.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				ONLY_ACTIVE_ARCH = YES;
 				OTHER_CFLAGS = "-DLUA_USE_IOS";
 				PRODUCT_NAME = lua_MacOS;
 				SDKROOT = macosx;
@@ -1016,8 +1024,10 @@
 		E7094DC619538427002FD6A0 /* Demo */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
 				DSTROOT = /tmp/lua.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				ONLY_ACTIVE_ARCH = YES;
 				OTHER_CFLAGS = "-DLUA_USE_IOS";
 				PRODUCT_NAME = lua_MacOS;
 				SDKROOT = macosx;
@@ -1027,6 +1037,7 @@
 		E7094DD219538668002FD6A0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
@@ -1043,6 +1054,7 @@
 		E7094DD319538668002FD6A0 /* Demo */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
@@ -1056,6 +1068,7 @@
 		E7094DD419538668002FD6A0 /* Profile */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
@@ -1069,6 +1082,7 @@
 		E7094DD519538668002FD6A0 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
@@ -1082,6 +1096,7 @@
 		E7094DD619538668002FD6A0 /* Beta */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
@@ -1095,6 +1110,7 @@
 		E7094DD719538668002FD6A0 /* AppStore */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
@@ -1108,6 +1124,7 @@
 		E7094DD819538668002FD6A0 /* Distribution */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
@@ -1169,8 +1186,10 @@
 		E735083518FCBB750064278E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
 				DSTROOT = /tmp/lua.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				ONLY_ACTIVE_ARCH = YES;
 				OTHER_CFLAGS = "-DLUA_USE_IOS";
 				PRODUCT_NAME = lua_MacOS;
 				SDKROOT = macosx;
@@ -1180,8 +1199,10 @@
 		E735083618FCBB750064278E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
 				DSTROOT = /tmp/lua.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				ONLY_ACTIVE_ARCH = YES;
 				OTHER_CFLAGS = "-DLUA_USE_IOS";
 				PRODUCT_NAME = lua_MacOS;
 				SDKROOT = macosx;
