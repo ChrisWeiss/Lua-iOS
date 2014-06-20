@@ -146,7 +146,7 @@
 		E78BED3B1856A3B400561476 /* Copy Headers */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
-			dstPath = "include/$(PRODUCT_NAME)";
+			dstPath = include/lua;
 			dstSubfolderSpec = 16;
 			files = (
 				E735084218FCC1AB0064278E /* luaconf.h in Copy Headers */,
@@ -666,6 +666,7 @@
 			buildSettings = {
 				DSTROOT = /tmp/lua.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				ONLY_ACTIVE_ARCH = NO;
 				OTHER_CFLAGS = "-DLUA_USE_IOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -749,6 +750,7 @@
 			buildSettings = {
 				DSTROOT = /tmp/lua.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				ONLY_ACTIVE_ARCH = NO;
 				OTHER_CFLAGS = "-DLUA_USE_IOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -830,6 +832,7 @@
 			buildSettings = {
 				DSTROOT = /tmp/lua.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				ONLY_ACTIVE_ARCH = NO;
 				OTHER_CFLAGS = "-DLUA_USE_IOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -907,6 +910,7 @@
 			buildSettings = {
 				DSTROOT = /tmp/lua.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				ONLY_ACTIVE_ARCH = NO;
 				OTHER_CFLAGS = "-DLUA_USE_IOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -990,6 +994,7 @@
 			buildSettings = {
 				DSTROOT = /tmp/lua.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				ONLY_ACTIVE_ARCH = NO;
 				OTHER_CFLAGS = "-DLUA_USE_IOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -1284,6 +1289,7 @@
 			buildSettings = {
 				DSTROOT = /tmp/lua.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				ONLY_ACTIVE_ARCH = NO;
 				OTHER_CFLAGS = "-DLUA_USE_IOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -1294,6 +1300,7 @@
 			buildSettings = {
 				DSTROOT = /tmp/lua.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				ONLY_ACTIVE_ARCH = NO;
 				OTHER_CFLAGS = "-DLUA_USE_IOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -1314,6 +1321,7 @@
 				E7094DD819538668002FD6A0 /* Distribution */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E7176DB218577870002709F2 /* Build configuration list for PBXNativeTarget "LuaTests_iOS" */ = {
 			isa = XCConfigurationList;
