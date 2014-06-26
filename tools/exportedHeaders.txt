@@ -1,0 +1,7 @@
+luaconf.h
+lualib.h
+lua.h
+lua.hpp
+lapi.h
+lauxlib.h
+ldebug.h

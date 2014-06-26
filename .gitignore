@@ -28,3 +28,6 @@ DerivedData
 
 #Version control files
 .svn
+android/libs
+android/obj
+exportedHeaders

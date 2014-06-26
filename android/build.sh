@@ -22,3 +22,6 @@ fi
 cd "$TOPLEVEL"/android/jni
 "$NDKBUILD" -j 7 NDK_DEBUG=1
 #$NDKBUILD -j 7 NDK_DEBUG=1 > build.txt 2>&1
+
+#export headers
+"$TOPLEVEL"/tools/copyHeaders.sh 
