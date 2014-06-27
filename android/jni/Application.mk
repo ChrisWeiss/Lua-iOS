@@ -36,9 +36,3 @@ APP_PLATFORM := android-9
 # enable c11
 APP_CFLAGS += -std=c99
 
-# disabled warnnings
-#APP_CPPFLAGS += -Wno-format
-APP_CFLAGS += -fdiagnostics-show-category=name -Wall -Woverloaded-virtual -Werror -Wno-invalid-noreturn
-APP_CPPFLAGS += -fdiagnostics-show-category=name -Wall -Woverloaded-virtual -Werror
-
-

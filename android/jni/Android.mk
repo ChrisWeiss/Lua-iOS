@@ -15,7 +15,11 @@ LOCAL_C_INCLUDES := $(LUA_PROJECT_PATH)
 LOCAL_EXPORT_C_INCLUDES := $(LUA_PROJECT_PATH)
 #special luaconf.h directive..
 LOCAL_CFLAGS += "-DLUA_USE_ANDROID"
-LOCAL_CFLAGS += "-Wno-invalid-noreturn"
+LOCAL_CFLAGS += -fdiagnostics-show-category=name
+LOCAL_CFLAGS += -Wall
+LOCAL_CFLAGS += -Woverloaded-virtual
+LOCAL_CFLAGS += -Werror
+LOCAL_CFLAGS += -Wno-invalid-noreturn
 include $(BUILD_STATIC_LIBRARY)
 
 #lua shared lib
