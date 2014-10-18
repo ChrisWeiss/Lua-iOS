@@ -20,6 +20,9 @@ LOCAL_CFLAGS += -Wall
 LOCAL_CFLAGS += -Woverloaded-virtual
 LOCAL_CFLAGS += -Werror
 LOCAL_CFLAGS += -Wno-invalid-noreturn
+LOCAL_CFLAGS += -Wshorten-64-to-32
+LOCAL_CFLAGS += -Winit-self
+LOCAL_CFLAGS += -Wconditional-uninitialized
 include $(BUILD_STATIC_LIBRARY)
 
 #lua shared lib
