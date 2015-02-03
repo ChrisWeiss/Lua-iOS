@@ -5,7 +5,7 @@ cd $SRCDIR
 
 # mac
 #################### GYP_DEFINES ####
-DEFINES=" library=static_library
+DEFINES=" lua_library_type=static_library
         "
 GYP_DEFINES=${DEFINES} gyp lua.gyp --check --depth . -f xcode --generator-output=./output/mac
 
@@ -13,7 +13,7 @@ GYP_DEFINES=${DEFINES} gyp lua.gyp --check --depth . -f xcode --generator-output
 
 # ios
 #################### GYP_DEFINES ####
-DEFINES=" library=static_library
+DEFINES=" lua_library_type=static_library
           OS=ios
         "
 GYP_DEFINES=${DEFINES} gyp lua.gyp --check --depth . -f xcode --generator-output=./output/ios
@@ -22,7 +22,7 @@ GYP_DEFINES=${DEFINES} gyp lua.gyp --check --depth . -f xcode --generator-output
 
 # android
 #################### GYP_DEFINES ####
-DEFINES=" library=static_library
+DEFINES=" lua_library_type=static_library
           os_posix=1
           OS=android
           target_arch=arm

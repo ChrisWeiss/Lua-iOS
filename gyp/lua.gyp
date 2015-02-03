@@ -104,7 +104,7 @@
           '../exportedHeaders/'
         ]
       }, 
-      'type': '<(library)', 
+      'type': '<(lua_library_type)', 
     } 
   ]
 
