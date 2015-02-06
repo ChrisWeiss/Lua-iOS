@@ -1,7 +1,40 @@
 #!/bin/bash
 
+function gyp_help() {
+  echo "to install gyp:"
+  echo "cd ~/your_workspace/"
+  echo "git clone git@github.com:anki/anki-gyp.git"
+  echo "echo PATH=$HOME/your_workspace/gyp:\$PATH >> ~/.bash_profile"
+  echo ". ~/.bash_profile"
+}
+
+#location of this script
 SRCDIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 cd $SRCDIR
+
+#root of the git project
+GIT=`which git`
+if [ -z $GIT ]; then
+  echo git not found
+  exit 1
+fi
+TOPLEVEL=`$GIT rev-parse --show-toplevel`
+
+GYP=`which gyp`
+if [ -z $GYP ]; then
+  echo gyp not found
+  gyp_help
+  exit 1
+  echo $GYP
+fi
+
+$GYP --version | grep ANKI > /dev/null 2>&1
+
+if [ $? -ne 0 ]; then
+  echo incorrect version of gyp installed
+  gyp_help
+  exit 1
+fi
 
 # mac
 #################### GYP_DEFINES ####
