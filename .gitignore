@@ -35,3 +35,4 @@ gyp/output/ios
 gyp/output/lua/jni/Android.mk
 gyp/output/lua/obj
 gyp/output/mac
+gyp/build

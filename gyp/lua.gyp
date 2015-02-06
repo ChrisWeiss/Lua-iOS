@@ -38,7 +38,35 @@
     'xcode_settings': {
       'OTHER_CFLAGS': ['<@(compiler_c_flags)'],
       'OTHER_CPLUSPLUSFLAGS': ['<@(compiler_cpp_flags)'],
-    }
+    },
+    'configurations': {
+      'Debug': {
+          'cflags': ['-O0'],
+          'cflags_cc': ['-O0'],
+          'defines': [
+            '_LIBCPP_DEBUG=0',
+            'DEBUG=1',
+            'PROFILE=1',
+          ],
+      },
+      'Pofile': {
+          'cflags': ['-O3'],
+          'cflags_cc': ['-O3'],
+          'defines': [
+            '_LIBCPP_DEBUG=0',
+            'NDEBUG=1',
+            'PROFILE=1',
+          ],
+      },
+      'Release': {
+          'cflags': ['-O3'],
+          'cflags_cc': ['-O3'],
+          'defines': [
+            'NDEBUG=1',
+            'RELEASE=1',
+          ],
+      },
+    },
   },
 
 
