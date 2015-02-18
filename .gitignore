@@ -31,3 +31,8 @@ DerivedData
 android/libs
 android/obj
 exportedHeaders
+gyp/output/ios
+gyp/output/lua/jni/Android.mk
+gyp/output/lua/obj
+gyp/output/mac
+gyp/build
