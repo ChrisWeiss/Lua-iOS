@@ -29,6 +29,7 @@
       '<@(lua_specific_compiler_flags)',
       '<@(compiler_flags)'
     ],
+    'target_archs%': ['$(ARCHS_STANDARD_32_64_BIT)'],
   },
 
 
@@ -100,6 +101,9 @@
     [ 
       "OS=='mac'", 
       {
+        'xcode_settings': {
+          'ARCHS': ['<@(target_archs)'],
+        },
         'target_defaults': {
           'defines': [
             'LUA_USE_MACOSX'
