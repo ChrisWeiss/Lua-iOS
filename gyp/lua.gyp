@@ -50,9 +50,9 @@
             'PROFILE=1',
           ],
       },
-      'Pofile': {
-          'cflags': ['-O3'],
-          'cflags_cc': ['-O3'],
+      'Profile': {
+          'cflags': ['-Os'],
+          'cflags_cc': ['-Os'],
           'defines': [
             '_LIBCPP_DEBUG=0',
             'NDEBUG=1',
@@ -60,8 +60,8 @@
           ],
       },
       'Release': {
-          'cflags': ['-O3'],
-          'cflags_cc': ['-O3'],
+          'cflags': ['-Os'],
+          'cflags_cc': ['-Os'],
           'defines': [
             'NDEBUG=1',
             'RELEASE=1',
@@ -117,20 +117,9 @@
 
   'targets': [
     {
-      'target_name': 'lua', 
-      'target_conditions': [
-        [
-          "OS=='android'",
-          {
-            'sources': [ "<!@(sed -e 's/^..\///' <(source_file_name))" ], 
-            'include_dirs': [ 'lua-5.2.2/src/' ],
-          },
-          { #else (not android)
-            'sources': [ '<!@(cat <(source_file_name))' ], 
-            'include_dirs': [ '../lua-5.2.2/src/' ],
-          } #end not android
-        ],
-      ],
+      'target_name': 'lua',
+       'sources': [ '<!@(cat <(source_file_name))' ], 
+       'include_dirs': [ '../lua-5.2.2/src/' ],
       'direct_dependent_settings': {
         'include_dirs': [
           '../exportedHeaders/'
