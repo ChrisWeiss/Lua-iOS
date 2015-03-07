@@ -1,7 +1,7 @@
 {
 
   'variables': {
-
+    'lua_name': 'Lua',
     'source_file_name': 'lua.lst',
 
     'lua_specific_compiler_flags' : [
@@ -147,9 +147,10 @@
 
   'targets': [
     {
-      'target_name': 'libLua',
-       'sources': [ '<!@(cat <(source_file_name))' ],
-       'include_dirs': [ '../lua-5.2.2/src/' ],
+      'target_name': '<(lua_name)',
+      'product_prefix': 'lib',
+      'sources': [ '<!@(cat <(source_file_name))' ],
+      'include_dirs': [ '../lua-5.2.2/src/' ],
       'direct_dependent_settings': {
         'include_dirs': [
           '../exportedHeaders/'
