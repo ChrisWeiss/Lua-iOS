@@ -414,6 +414,7 @@
 		E78BED351856A3B400561476 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftMigration = 0730;
 				LastUpgradeCheck = 0600;
 				ORGANIZATIONNAME = Lua;
 				TargetAttributes = {
